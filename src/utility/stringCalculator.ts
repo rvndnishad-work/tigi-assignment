@@ -4,6 +4,8 @@ export const add = (numbers: string): number => {
     }
 
     let delimiter = ',';
+
+    numbers = numbers.replace(/\n/g, delimiter);
     const numList = numbers.split(delimiter);
 
     let total = 0;

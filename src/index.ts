@@ -10,4 +10,7 @@ const input3 = '1,5';
 console.log(`Output: ${add(input3)}`);
 
 const input4 = '1,-3,5';
-console.log(`Output: ${add(input4)}`);
+// console.log(`Output: ${add(input4)}`);
+
+const input5 = '1,\n3,5';
+console.log(`Output: ${add(input5)}`);
