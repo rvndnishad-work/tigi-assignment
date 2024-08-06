@@ -11,10 +11,9 @@ export const add = (numbers: string): number => {
         numbers = numbers.substring(delimiterEndIndex + 1);
     }
 
-    delimiter = delimiter.replace(/[\[\]]/g, '');
     const delimiters = new RegExp(`[${delimiter},\n]+`);
 
-    const numList = numbers.split(delimiter);
+    const numList = numbers.split(delimiters);
 
     let total = 0;
     const negatives: number[] = [];

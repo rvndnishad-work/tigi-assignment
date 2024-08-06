@@ -21,5 +21,6 @@ console.log(`Output: ${add(input6)}`);
 const input7 = '//|\n1|3|5|7';
 console.log(`Output: ${add(input7)}`);
 
+//additional test cases
 const input8 = '\n';
 console.log(`Output: ${add(input8)}`);
