@@ -5,7 +5,15 @@ export const add = (numbers: string): number => {
 
     let delimiter = ',';
 
-    numbers = numbers.replace(/\n/g, delimiter);
+    if (numbers.startsWith('//')) {
+        const delimiterEndIndex = numbers.indexOf('\n');
+        delimiter = numbers.substring(2, delimiterEndIndex);
+        numbers = numbers.substring(delimiterEndIndex + 1);
+    }
+
+    delimiter = delimiter.replace(/[\[\]]/g, '');
+    const delimiters = new RegExp(`[${delimiter},\n]+`);
+
     const numList = numbers.split(delimiter);
 
     let total = 0;
