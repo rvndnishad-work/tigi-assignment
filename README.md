@@ -21,7 +21,6 @@ A simple string calculator implemented in TypeScript. This project demonstrates 
 
    ```bash
    git clone https://github.com/rvndnishad-work/tigi-assignment.git
-   cd string-calculator
    ```
 
 2. **Install dependencies**
